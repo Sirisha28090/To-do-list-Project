@@ -1,0 +1,263 @@
+:root {
+  --primary: #007bff;
+  --bg: #ffffff;
+  --text: #333;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --primary: #1e90ff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#themeToggle {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.top-bar,
+.search-bar,
+.filter-bar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-actions button {
+  background: transparent;
+  color: var(--primary);
+  border: none;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+:root {
+  --bg: #f0f0f0;
+  --text: #222;
+  --card: #fff;
+  --primary: #0077ff;
+}
+body.dark {
+  --bg: #1e1e2f;
+  --text: #eee;
+  --card: #2c2c3e;
+  --primary: #00bcd4;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.top-bar, .search-bar {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.top-bar input, .search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task-list li {
+  background: #e3f2fd;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-actions button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#taskCount {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: auto;
+}
+
+/* Welcome Page Styles */
+body.welcome {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-container {
+  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-container h1 {
+  font-size: 36px;
+}
+
+.brand {
+  color: #6a11cb;
+}
+
+.welcome-container button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.description {
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background: #f4f4f4;
+  border-radius: 12px;
+  color: #333;
+}
+
+body.dark .description {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.description h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.description ul {
+  padding-left: 1.2rem;
+}
+
+.description ul li {
+  margin-bottom: 0.5rem;
+}
