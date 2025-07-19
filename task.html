@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo Pro - Tasks</title>
+  <link rel="stylesheet" href="style6.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>📑 To Do List</h1>
+      <button id="themeToggle">🌗</button>
+    </header>
+
+    <!-- 📌 Description Section -->
+    <section class="description">
+      <h2>Welcome to ToDo Pro</h2>
+      <p>
+        <strong>ToDo Pro</strong> is a sleek, professional task management tool designed to help you stay organized and productive. Whether you're tracking personal tasks, managing work goals, or simply planning your day — this app has all the smart features you need.
+      </p>
+
+      <h3>🌟 Key Features</h3>
+      <ul>
+        <li><strong>Add Tasks:</strong> Quickly add new tasks using the input bar.</li>
+        <li><strong>Search Instantly:</strong> Filter tasks as you type to find anything in seconds.</li>
+        <li><strong>Smart Filters:</strong> Switch between <em>All</em>, <em>Pending</em>, or <em>Completed</em> views.</li>
+        <li><strong>Dark Mode:</strong> Toggle between light and dark themes for a comfortable viewing experience.</li>
+        <li><strong>Edit / Delete:</strong> Easily update or remove tasks with a single click.</li>
+        <li><strong>Progress Count:</strong> Live task count updates as you go.</li>
+        <li><strong>Local Storage:</strong> All your tasks are saved even if you refresh or close the tab.</li>
+        <li><strong>Drag & Drop (Optional):</strong> Rearrange tasks effortlessly by dragging them.</li>
+      </ul>
+
+        </section>
+
+    <!-- Existing Task UI -->
+    <div class="top-bar">
+      <input type="text" id="taskInput" placeholder="Add new task...">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search tasks..." oninput="searchTasks()">
+      <span id="taskCount">0 tasks</span>
+    </div>
+
+    <div class="filter-bar">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('pending')">Pending</button>
+      <button onclick="setFilter('completed')">Completed</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+  </div>
+
+  <script src="script7.js"></script>
+  <script src="drag.js"></script>
+</body>
