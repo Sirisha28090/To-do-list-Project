@@ -261,3 +261,6 @@ body.dark .description {
 .description ul li {
   margin-bottom: 0.5rem;
 }
+.dragging {
+  opacity: 0.4;
+}
